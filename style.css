@@ -652,3 +652,26 @@ nav {
     font-size: 30px;
     font-weight: 700;
 }
+
+.theme {
+
+    background-color: var(--pri);
+    padding: 12px 20px;
+    border-radius: 10px;
+    -webkit-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    cursor: pointer;
+
+}
+
+.theme h4 {
+    color: var(--sec);
+    font-weight: 700;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.theme:active {
+    scale: 0.96;
+}
