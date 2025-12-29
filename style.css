@@ -122,12 +122,13 @@ header .header2 h3 {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
     justify-content: space-between;
-    /* gap: 20px; */
+    gap: 20px;
+    height: 62%;
 }
 
 .elem {
