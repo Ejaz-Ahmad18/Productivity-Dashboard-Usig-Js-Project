@@ -119,3 +119,21 @@ function dailyPlanner() {
 }
 
 dailyPlanner()
+
+
+function motivationalQuote() {
+    var motivationQuoteContent = document.querySelector('.motivation-2 h1')
+    var motivationAuthor = document.querySelector('.motivation-3 h2')
+
+    async function fetchQuote() {
+        let response = await fetch('https://api.quotable.io/random')
+        let data = await response.json()
+
+        motivationQuoteContent.innerHTML = data.content
+        motivationAuthor.innerHTML = data.author
+    }
+
+    fetchQuote()
+}
+
+motivationalQuote()
